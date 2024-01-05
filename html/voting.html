@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimum Age Check</title>
+    <style>
+        div{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div>
+    <h1>Age Check</h1>
+    <label for="age">Enter your age:</label>
+    <input type="number" id="ageInput">
+    <button onclick="checkAge()">Check Eligibelity</button>
+    <p id="result"></p>
+</div>
+
+<script>
+    function checkAge() {       
+        var age = document.getElementById("ageInput").value;
+        var result = age >= 18 ? "You are eligible to vote." : "You are not eligible to vote.";
+        document.getElementById("result").innerHTML = result;
+    }
+</script>
+
+</body>
+</html>

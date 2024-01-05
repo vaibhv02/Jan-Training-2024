@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            border: 2px solid;
+            gap: 15px;
+        }
+
+        .grid-item-one{
+            grid-column: 1/4;
+            grid-row: 1/5;
+            background-color: green;
+        }
+
+        .grid-item-two{
+            grid-column: 1/4;
+            background-color:greenyellow;
+        }
+
+        .grid-item-three{
+            height: 80v;
+            background-color: gray;
+        }
+
+        .grid-item-four{
+            width:1000px;
+            height: 80vh;
+            background-color: aquamarine;
+        }
+        .grid-item-five{
+            height: 70v;
+            background-color: grey;
+        }
+
+        .grid-item-six{
+            grid-column: 1/4;
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item-one">NavBar</div>
+        <div class="grid-item-two">Header</div>
+        <div class="grid-item-three">Left Side Bar</div>
+        <div class="grid-item-four">Body</div>
+        <div class="grid-item-five">Right Side Bar</div>
+        <div class="grid-item-six">Footer</div>
+
+
+    </div>
+</body>
+</html>

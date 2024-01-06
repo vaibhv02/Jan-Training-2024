@@ -11,6 +11,14 @@ console.log(obj);
 
 
 //how to iterate object
+//for of
+//for in
+
+for (let key in obj)
+{
+    console.log(obj.key);
+}
+
 
 for (let key in obj)
 {

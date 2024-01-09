@@ -27,10 +27,10 @@
         let countdownInterval;
 
         function parseDuration() {
-            const days = parseInt(document.getElementById('days').value, 10) || 0;
-            const hours = parseInt(document.getElementById('hours').value, 10) || 0;
-            const minutes = parseInt(document.getElementById('minutes').value, 10) || 0;
-            const seconds = parseInt(document.getElementById('seconds').value, 10) || 0;
+            const days = parseInt(document.getElementById('days').value) || 0;
+            const hours = parseInt(document.getElementById('hours').value) || 0;
+            const minutes = parseInt(document.getElementById('minutes').value) || 0;
+            const seconds = parseInt(document.getElementById('seconds').value) || 0;
 
             return (days * 24 * 60 * 60) + (hours * 60 * 60) + (minutes * 60) + seconds;
         }

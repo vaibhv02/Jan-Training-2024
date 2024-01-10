@@ -1,0 +1,66 @@
+body {
+  background-image: url(./pexels-paula-schmidt-963486.jpg);
+  background-size: cover;
+  place-items: center;
+}
+.container {
+  background-color: aliceblue;
+  width: 60%;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 18%;
+  text-align: center;
+}
+
+.btn {
+  background-color: #094497;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  background-color: #08215a;
+}
+
+.modal-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -10;
+    height: 100vh; /* Full height */
+    background: #094497;
+    display: grid;
+    place-items: center;
+    visibility: hidden;
+    transition: var(--transition);
+}
+
+.open-model{
+    visibility: visible;
+    z-index: 10;
+}
+
+.model-container{
+    background: var(--clr-white);
+    border-radius: var(--radius);
+    width: 90vw;
+    height: 30vh;
+    max-width: var(--fixed-width);
+    text-align: center;
+    box-shadow: var(--light-box-shadow);
+    position: relative;
+    overflow: hidden;
+    transition: .5s all ease-in-out;
+    place-items: center;
+    position: relative;
+    visibility: hidden;
+
+}

@@ -1,5 +1,7 @@
 //creating object
 
+
+
 function createUser(firstName, lastName, age, email, address) {
     const user = {};
     user.firstName = firstName;
@@ -16,6 +18,7 @@ function createUser(firstName, lastName, age, email, address) {
     }
     return user;
 }
+
 
 //now let send data to function and get our object
 const obj1 = createUser("Vaibhav","Sharma",24,"vaibhavshrma002@gmail.com","mohali")

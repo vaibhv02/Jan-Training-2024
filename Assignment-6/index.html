@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter</title>
+  </head>
+  <body>
+    <h1>Counter</h1>
+    <p>Increment, Reset and Decrement Counter</p>
+    <div class="main">
+      <button onclick="decrease()">-</button>
+      <span id="counter"></span>
+      <button onclick="increment()">+</button>
+      <br /><br />
+      <button onclick="reset()">Reset</button>
+    </div>
+
+
+    <script>
+      let counter = 0;
+      
+      document.getElementById("counter").innerHTML = counter;
+      function increment() {
+        counter++;
+        document.getElementById("counter").innerHTML = counter;
+      }
+
+      function decrease() {
+        counter--;
+        document.getElementById("counter").innerHTML = counter;
+      }
+
+      function reset() {
+        counter = 0;
+        document.getElementById("counter").innerHTML = counter;        
+      }
+    </script>
+  </body>
+</html>

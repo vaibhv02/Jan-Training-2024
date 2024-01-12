@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Append Child</title>
+  </head>
+  <body>
+    <h1 class="head" style="background-color: aquamarine; color: teal">
+      Heading 1
+    </h1>
+
+    <script>
+      let newhead = document.createElement("h1");
+      newhead.textContent = "Heading 2";
+      document.body.appendChild(newhead);
+      newhead.style.cssText = document.querySelector(".head").style.cssText;
+
+      let newpar = document.createElement("p");
+      newpar.textContent = "new p tag is created by JavaScript";
+      document.body.appendChild(newpar);
+    </script>
+  </body>
+</html>

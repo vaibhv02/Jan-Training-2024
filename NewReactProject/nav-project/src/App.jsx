@@ -3,6 +3,7 @@
 // import Navbar from "./assets/components/Navbar/Navbar";
 // import Props from "./assets/components/Props";
 
+
 // function App() {
 //   return(
 //     <div className="App">
@@ -14,22 +15,37 @@
 // export default App;
 
 
-import React, { Component } from 'react';
-import Props2 from './assets/components/Props2';
+// import React, { Component } from 'react';
+// import Props2 from './assets/components/Props2';
 
-class App extends Component {
-    render() {
-        const person = {
-            name: 'Vaibhv Sharma',
-            age: 24,
-        };
+// class App extends Component {
+//     render() {
+//         const person = {
+//             name: 'Vaibhv Sharma',
+//             age: 24,
+//         };
 
-        return (
-            <div>
-                <Props2 person={person} />
-            </div>
-        );
+//         return (
+//             <div>
+//                 <Props2 person={person} />
+//             </div>
+//         );
+//     }
+// }
+
+
+import Count from "./assets/components/Count";
+import FunctionComp from "./assets/components/FunctionComp";
+
+
+function App() {
+      return(
+        <div className="App">
+          {/* <FunctionComp/> */}
+          <Count/>
+        </div>
+        
+      )
     }
-}
 
 export default App;

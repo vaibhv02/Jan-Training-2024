@@ -36,6 +36,10 @@
 
 import Count from "./assets/components/Count";
 import FunctionComp from "./assets/components/FunctionComp";
+import Initialization from "./assets/components/Initialization";
+import ReadOnlyStateExample from "./assets/components/ReadOnlyStateExample";
+import ReadStateExample from "./assets/components/ReadStateExample";
+import SetSimpleExample from "./assets/components/SetSimpleExample";
 
 
 function App() {
@@ -43,6 +47,10 @@ function App() {
         <div className="App">
           {/* <FunctionComp/> */}
           <Count/>
+          {/* <Initialization/> */}
+          {/* <SetSimpleExample/> */}
+          <ReadStateExample/>
+          <ReadOnlyStateExample/>
         </div>
         
       )

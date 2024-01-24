@@ -1,0 +1,38 @@
+
+
+.login-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 50px;
+  }
+  
+  .heading {
+    text-align: center;
+    color: #cecdcd;
+  }
+  
+  .label {
+    display: block;
+    margin: 10px 0;
+    color: #cacaca;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+  .button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  

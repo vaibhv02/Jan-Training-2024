@@ -4,30 +4,23 @@ import Login from "./assets/Components/login/Login";
 import Signup from "./assets/Components/signup/Signup";
 
 const App = () => {
-  // const [isLogin, setIsLogin] = useState(true);
-  const [state, setState] = useState(0);
+
+const[state,setState] = useState(0)
+
+const handleClick = ()=>{
+  for(let i = 0; i<4; i++){
+    setState(state + i)
+    console.log(state,"state<><><>><<>")
+  }
+}
+
 
   return (
-    // <div className="container">
-    //   {isLogin ? <Login /> : <Signup />}
-    //   <p>
-    //     {isLogin ? "Don't have an account? " : "Already have an account? "}
-    //     <button className="toggle-button" onClick={() => setIsLogin(!isLogin)}>
-    //       {isLogin ? "Sign Up" : "Login"}
-    //     </button>
-    //   </p>
-    // </div>
     <div className="App">
-    <button
-      onClick={() => {
-        for (let i = 0; i < 4; i++) {
-          setState(state + i);
-        }
-      }}
-    >
-      counter
-    </button>
-    <span>{state}</span>
+      <button onClick={handleClick}>update</button>
+      <div>
+        {state}
+      </div>
   </div>
   );
 };

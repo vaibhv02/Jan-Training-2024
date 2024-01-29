@@ -1,0 +1,32 @@
+
+<a href="/add">
+<button style="background-color: green;">Add</button>
+</a>
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Course</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody align="center">
+  
+    <% dt.forEach(row => { %>
+      <tr>
+        <td><%= row.id %></td>
+        <td><%= row.name %></td>
+        <td><%= row.course %></td>
+        <td>
+        
+          <button style="background-color:yellow;">Edit</button>
+          <button style="background-color: red;">Delete</button>
+        </td>
+      </tr>
+    <% }) %>
+  </tbody>
+</table>
+
+

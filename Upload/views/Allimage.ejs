@@ -1,0 +1,16 @@
+<div class="container mt-5">
+  <% if (data && data.length> 0) { %>
+  <div class="row bg-secondary b-5">
+    <% data.firEach(image => { %>
+    <div class="col-3 md-4">
+      <div class="row">
+        <img src="<%= image.src %>" alt="<%=image.originalname%>" />
+      </div>
+    </div>
+    <% }) %>
+  </div>
+  <% } else { %>
+  <p>No image available</p>
+
+  <% } %>
+</div>
